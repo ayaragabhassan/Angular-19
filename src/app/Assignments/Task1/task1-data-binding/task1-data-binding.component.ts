@@ -13,6 +13,7 @@ export class Task1DataBindingComponent {
   clickCount:number[]= [];
   counter:number=0;
   isfeatured:boolean=true;
+
   featureStyle={
     "background-color":"blue",
   }

@@ -9,4 +9,27 @@
 
 <!------------------------------------------------------------------------------------->
 <!--Lecture 2 Assignments-->
-<app-task1-data-binding></app-task1-data-binding>
+<!-- <app-task1-data-binding></app-task1-data-binding> -->
+<!--Lecture 3 -->
+<!-- <app-all-in-one-component></app-all-in-one-component> -->
+<!-- <app-parent-comp-app></app-parent-comp-app> -->
+
+<!------------------------------------------------------------------------------->
+<!---------------Lect5 Directives---------------->
+<!-- <app-products-list></app-products-list> -->
+<!---Lect6 Component Life Cycle-->
+<!-- <app-></app-server-element> -->
+
+
+<div class="row">
+    <div class="col-md-12">
+        <button class="btn btn-primary" (click)="Onchangefirst()">Change First Element</button>
+        <button class="btn btn-primary" (click)="OnDestroyfirst()">Destroy First Element</button>
+
+
+        <app-server-element *ngFor="let ele of serverElements" [serverElement]="ele"
+        [name]="ele.name">
+
+        </app-server-element>
+    </div>
+</div>

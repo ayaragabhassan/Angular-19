@@ -1,0 +1,19 @@
+<div class="container">
+  <!--Div to create Buttons-->
+  <div class="row">
+    <app-child1-core
+      (serverCreated) = "OnAddServer($event)"
+      (bluePrintCreated) = "OnAddBlueprint($event)">
+    </app-child1-core>
+  </div>
+
+  <!-------To Display Logic----->
+  <div class="row">
+    <app-child2-server-elements
+    *ngFor="let ele of serverElements"
+    [elemet]="ele">
+
+    </app-child2-server-elements>
+
+  </div>
+</div>

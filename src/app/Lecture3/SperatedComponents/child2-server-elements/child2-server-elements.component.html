@@ -1,0 +1,8 @@
+<!-- Card Example -->
+<div class="card" style="width: 18rem;">
+  <h5 class="card-header">{{elemet.name}}</h5>
+  <div class="card-body">
+    <p class="card-text" *ngIf="elemet.type =='Server'" style="color: red;">{{elemet.content}}</p>
+    <i *ngIf="elemet.type=='BluePrint'">{{elemet.content}}</i>
+  </div>
+</div>

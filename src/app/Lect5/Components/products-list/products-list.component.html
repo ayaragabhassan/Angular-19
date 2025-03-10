@@ -1,0 +1,16 @@
+
+<div class="container mt-5">
+  <div class="card" style="width: 18rem;">
+    <img [src]="product.Image" class="card-img-top" [alt]="product.Name">
+    <div class="card-body">
+      <h5 appCustomeDirectiveExample  class="card-title">{{ product.Name }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">${{product.Price}}</h6>
+      <p  appCustomeDirectiveExample [highlightColor]= "''" defaultColor="violet" class="card-text">{{product.Description}}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+<!----------ngNonBindable--------->
+<!----Deactivate interpolation, Directives-->
+<p>Use ngNonBindable to stop evaluation.</p>
+<p ngNonBindable>This should not evaluate: {{ 1 + 1 }}</p>

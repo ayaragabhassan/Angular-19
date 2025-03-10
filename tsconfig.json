@@ -16,12 +16,47 @@
     "moduleResolution": "bundler",
     "importHelpers": true,
     "target": "ES2022",
-    "module": "ES2022"
+    "module": "ES2022",
+    "strictPropertyInitialization": false
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "support.class.ts",
+        "settings": {
+          "foreground": "#ff7b00"
+        } // Orange for classes
+      },
+      {
+        "scope": "support.type.primitive.ts",
+        "settings": {
+          "foreground": "#ffcc00"
+        } // Yellow for primitives (string, number, boolean)
+      },
+      {
+        "scope": "support.type.object.ts",
+        "settings": {
+          "foreground": "#00aaff"
+        } // Blue for object types
+      },
+      {
+        "scope": "support.type.builtin.ts",
+        "settings": {
+          "foreground": "#ff00ff"
+        } // Purple for built-in types (ElementRef, HTMLElement, etc.)
+      },
+      {
+        "scope": "entity.name.type.interface.ts",
+        "settings": {
+          "foreground": "#00ffcc"
+        } // Cyan for interfaces
+      }
+    ]
   }
 }
